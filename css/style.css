@@ -242,6 +242,7 @@ p > span {
     color: var(--gray85);
     color: #1b1b32;
     font-weight: 700;
+    cursor: pointer;
 }
 
 img {
@@ -253,6 +254,7 @@ img {
     object-fit: cover;
     height: 100%;
     width: 120%;
+    cursor: pointer;
 }
 
 .nav-right {
@@ -269,6 +271,7 @@ img {
     font-size: 18px;
     text-transform: capitalize;
     display: none;
+    cursor: pointer;
 }
 
 .avatar-name span {
@@ -282,6 +285,7 @@ img {
 
 button {
     font-family: Lato, sans-serif;
+    cursor: pointer;
 }
 
 .nav-right button {
@@ -311,6 +315,7 @@ header .bottom-header {
     text-align: center;
     color: #eeeef0;
     font-weight: 700;
+    cursor: pointer;
     padding: 0.7rem;
 }
 
