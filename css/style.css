@@ -166,7 +166,7 @@ table {
 }
 
 header {
-    height: 120px;
+    min-height: 90px;
     position: fixed;
     width: 100%;
     z-index: 2;
@@ -199,8 +199,6 @@ input::placeholder {
     color: var(--gray100);
     font-weight: 600;
     padding-left: 1rem;
-
-    /* padding-left: 1rem; */
 }
 
 .material-icons-outlined {
@@ -218,7 +216,7 @@ input::placeholder {
     color: var(--gray00);
     height: 26px;
     font-size: 18px;
-    padding: .7rem ;
+    padding: 0.7rem;
     font-weight: 600;
 }
 
@@ -316,7 +314,12 @@ header .bottom-header {
     color: #eeeef0;
     font-weight: 700;
     cursor: pointer;
-    padding: 0.7rem;
+    min-height: 44px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .bottom-header a {
@@ -329,9 +332,8 @@ header .bottom-header {
 
 main {
     width: 88%;
-    margin: 170px auto 20px;
+    margin: 130px auto 20px;
 }
-
 
 main .content {
     width: 100%;
@@ -349,7 +351,6 @@ main p {
     color: var(--theme-color);
 }
 
-
 .footer-container p {
     margin: 0 0 1.45rem;
     line-height: 30px;
@@ -365,7 +366,6 @@ main p {
     color: var(--gray85);
     text-decoration: none;
 }
-
 
 main .content p:first-child {
     font-size: 15px;
@@ -404,7 +404,7 @@ main .content p:first-child a {
 }
 
 section {
-    max-width: 920px;
+    width: 100%;
     margin: 1rem auto 5rem;
     display: flex;
     flex-direction: column;
@@ -529,7 +529,7 @@ footer {
     flex-direction: column;
 }
 
-a[href*='donate'] {
+a[href*="donate"] {
     text-decoration: underline;
 }
 
@@ -540,6 +540,7 @@ a[href*='donate'] {
 
     header .bottom-header,
     .bottom-header a {
+        line-height: 1.5;
         font-size: 17px;
     }
 
@@ -553,6 +554,10 @@ a[href*='donate'] {
 
     h3 {
         font-size: 28px;
+    }
+
+    section {
+        width: 88%;
     }
 
     .trending-guides-row {
@@ -597,10 +602,9 @@ a[href*='donate'] {
     figcaption {
         font-size: 19px;
     }
-    
-    main section p#bold {
-        font-size: 35px ;
 
+    main section p#bold {
+        font-size: 35px;
     }
 
     .footer-container {
